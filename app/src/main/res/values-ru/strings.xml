@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_world">Привет, мир!
+</string>
+    <string name="action_settings">Настройки</string>
+    <string name="scanning">Сканирование…</string>
+    <string name="scanning_m_of_n">Сканирование %1$d/%2$d</string>
+    <string name="settings_about">Информация</string>
+    <string name="settings_basic">Основа</string>
+    <string name="settings_grade">Обратная связь</string>
+    <string name="settings_share">Поделиться</string>
+    <string name="settings_version_update">Обновить</string>
+    <string name="short_cut_name">1 Нажатие для очистки</string>
+    <string name="slogan">Быстрее, ровнее и быстрее
+</string>
+    <string name="software_top_text">Программы: %1$s, Заняты: %2$s</string>
+    <string name="store_picture_message">
+Разрешить объявлению хранить изображение в картинной галерее?</string>
+    <string name="store_picture_title">Сохранить изображение</string>
+    <string name="license">Разработано Ферди Арда</string>
+    <string name="mr_media_route_controller_pause">Пауза</string>
+    <string name="mr_media_route_controller_play">Играть</string>
+    <string name="mr_media_route_controller_settings_description">Настройки маршрута</string>
+    <string name="mr_media_route_controller_stop">Прекратить кастинг</string>
+    <string name="navigation_drawer_close">Закрыть навигационный ящик</string>
+    <string name="navigation_drawer_open">Открыть навигационный ящик</string>
+    <string name="phone_boost">Бустер</string>
+    <string name="battery_saver">Сохранение батареи</string>
+    <string name="boost_notice">Некоторые приложения могут автоматически открываться после того, как они были вынуждены прекратить работу.</string>
+    <string name="cast_notification_connected_message">Соединен с %1$s</string>
+    <string name="cast_notification_connecting_message">Соединен с %1$s</string>
+    <string name="cast_notification_disconnect">Отключить</string>
+    <string name="category_advanced">Продвинутый</string>
+    <string name="category_def">Общая</string>
+    <string name="category_other">Другой</string>
+    <string name="clean_memory">Очистка памяти</string>
+    <string name="cleaned">Очищенно (%1$s)</string>
+    <string name="com_facebook_loading">Загрузка...</string>
+    <string name="create_calendar_message">
+Разрешить Ad для создания события календаря?</string>
+    <string name="create_calendar_title">
+Создать календарь событий</string>
+    <string name="decline">Снижение</string>
+    <string name="drawer_close">закрыть ящик</string>
+    <string name="drawer_open">открыть ящик</string>
+    <string name="empty_cache">Кеш пуст.</string>
+    <string name="junk_clean">Junk Clean</string>
+    <string name="app_software_manage">Управление Приложением</string>
+    <string name="optimizing">Оптимизация ......</string>
+    <string name="cooling_cpu">Охлаждение CPU</string>
+    <string name="freeable">Свободная</string>
+    <string name="clean_junk">Clean Junk</string>
+    <string name="done">ГОТОВО</string>
+    <string name="cleaning_dots">Очистка ......</string>
+    <string name="suggested">Предложенный</string>
+    <string name="selected_hungred_mb">Выбранно: 100MB</string>
+    <string name="currently_no_app">В настоящее время нет приложения, вызывающего перегрев</string>
+    <string name="more_apps">Больше приложений</string>
+    <string name="rate_five_stars">Рейтинг 5 звезд</string>
+    <string name="ununistall">Удалить</string>
+    <string name="your_ram_booster">Your Ram Booster Pro</string>
+    <string name="memory_booster">Бустер памяти</string>
+    <string name="in_develop">в Разработке</string>
+</resources>

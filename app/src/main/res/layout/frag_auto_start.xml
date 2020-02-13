@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffa6a6a6">
+
+        <TextView
+            android:id="@+id/topText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#ffccc6c6" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottom_lin"
+            android:layout_below="@+id/topText"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:dividerHeight="3dp"
+            android:fastScrollEnabled="true"
+            android:focusable="true"
+            android:layoutAnimation="@anim/listview_layout_animation"
+            android:listSelector="@android:color/transparent"
+            android:padding="12dp"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/bottom_lin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/disable_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/btn_normal_green"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="?android:windowBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:cpb_colors="@array/gplus_colors" />
+
+        <com.fchatnet.cleaner.views.RotateLoading
+            android:id="@+id/rotate_loading"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/progressBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:singleLine="true"
+            android:text="@string/scanning"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_header"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="206dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@id/arc_left"
+                android:layout_width="wrap_content"
+                android:layout_height="260dp"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:layout_width="126dp"
+                    android:layout_height="126dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_circle"
+                    android:visibility="gone" />
+
+                <com.fchatnet.cleaner.widget.circleprogress.ArcProgress
+                    android:id="@id/arc_store"
+                    android:layout_width="186dp"
+                    android:layout_height="186dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    custom:arc_bottom_text="STORAGE"
+                    custom:arc_bottom_text_size="17sp"
+                    custom:arc_progress="50"
+                    custom:arc_stroke_width="6dp"
+                    custom:arc_suffix_text_size="31sp"
+                    custom:arc_text_color="@color/orange"
+                    custom:arc_text_size="61sp"
+                    />
+                <TextView
+                    android:id="@+id/capacity"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:text="@string/twenty_therty"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="42dp" />
+            </RelativeLayout>
+
+            <com.fchatnet.cleaner.widget.circleprogress.ArcProgress
+                android:id="@id/arc_process"
+                android:layout_width="126dp"
+                android:layout_height="126dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/arc_left"
+                custom:arc_bottom_text="RAM"
+                custom:arc_bottom_text_size="13sp"
+                custom:arc_progress="10"
+                custom:arc_stroke_width="6dp"
+                custom:arc_suffix_text_size="21sp"
+                custom:arc_text_color="@color/orange"
+                custom:arc_text_size="41sp" />
+
+            <RelativeLayout
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_alignBottom="@id/arc_process"
+                android:layout_alignLeft="@id/arc_process"
+                android:layout_alignStart="@id/arc_process"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="24dp"
+                android:background="@drawable/shape_circle"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#ff4640ce"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/dddd" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <include layout="@layout/new_card" />
+    </RelativeLayout>
+</LinearLayout>
